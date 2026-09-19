@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: light; background: #F9F7F4;">
+<head>
+<meta charset="UTF-8">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+<meta name="theme-color" content="#F9F7F4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBT Naryn | Community Based Tourism in Kyrgyzstan</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="description" content="Jeep tours, horse treks and hiking to the most beautiful destinations of Kyrgyzstan. Community based tourism in Naryn.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20260952">
+<link rel="stylesheet" href="css/leaflet.css?v=20260913">
+<script>document.documentElement.classList.add('js')</script>
+    <link rel="preload" as="image" href="img/hero-main.jpg">
+    <link rel="preload" as="image" href="img/hero-bus.jpg">
+    <link rel="preload" as="image" href="img/hero-slide3.jpg">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <!-- NAV PILL -->
+  <nav class="hdr-nav">
+    <a href="index.html" class="hdr-logo">cbt naryn<small>community based tourism</small></a>
+    <div class="hdr-links">
+            <div class="hdr-item">
+        <button type="button" class="hdr-link" aria-expanded="false">Meet Us</button>
+        <div class="hdr-drop cols-m">
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-meet-story.jpg" alt="Factory">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Our Story</h4>
+              <p>Naryn, Kyrgyzstan</p>
+            </div>
+            <span class="hdr-card-btn">Discover<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-meet-plan.jpg" alt="Boutique">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Guesthouses</h4>
+              <p>Stay with local families</p>
+            </div>
+            <span class="hdr-card-btn">Plan your Visit<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-tour-hike.jpg" alt="Demo">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Demo & Drive</h4>
+              <p>Ride with locals. Feel the difference.</p>
+            </div>
+            <span class="hdr-card-btn">View Tours<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <div class="hdr-m-links">
+            <a href="tours.html">Events <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 3L13 8L8 13" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 8H3" stroke="#333" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+            <a href="#contact">Contact us <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 3L13 8L8 13" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 8H3" stroke="#333" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+            <div class="hdr-item">
+        <button type="button" class="hdr-link" aria-expanded="false">Tours</button>
+        <div class="hdr-drop cols-t">
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-lite.png" alt="Lite">
+            <img class="hdr-card-img-hover" src="img/nav-lite-int.jpg" alt="">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Jeep Tours</h4>
+              <p>Kel-Suu, Chatyr-Kul and the border zones.</p>
+              <span class="hdr-card-price">From $85 / day</span>
+            </div>
+            <span class="hdr-card-btn">Explore<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-plus.png" alt="Plus">
+            <img class="hdr-card-img-hover" src="img/nav-plus-int.jpg" alt="">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Horse Treks</h4>
+              <p>Multi-day rides across alpine pastures.</p>
+              <span class="hdr-card-price">From $65 / day</span>
+            </div>
+            <span class="hdr-card-btn">Explore<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img class="hdr-card-img" src="img/nav-next.png" alt="Next">
+            <img class="hdr-card-img-hover" src="img/nav-next-int.jpg" alt="">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Hiking</h4>
+              <p>Guided trails to passes and alpine lakes.</p>
+              <span class="hdr-card-price">From $45 / day</span>
+            </div>
+            <span class="hdr-card-btn">Explore<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+        </div>
+      </div>
+            <div class="hdr-item">
+        <button type="button" class="hdr-link" aria-expanded="false">Destinations</button>
+                <div class="hdr-drop cols-4">
+          <a class="hdr-card" href="tours.html">
+            <img src="img/kelsuu.jpg" alt="Kel-Suu">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Kel-Suu</h4>
+              <p>Turquoise lake on the Chinese border.</p>
+            </div>
+            <span class="hdr-card-btn">Discover<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img src="img/sonkol.jpg" alt="Son-Kol">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Son-Kol</h4>
+              <p>Yurt nights with shepherds at 3,016 m.</p>
+            </div>
+            <span class="hdr-card-btn">Discover<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img src="img/tashrabat.jpg" alt="Tash Rabat">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Tash Rabat</h4>
+              <p>Silk Road caravanserai, 3,200 m.</p>
+            </div>
+            <span class="hdr-card-btn">Discover<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img src="img/chatyrkol.jpg" alt="Chatyr-Kul">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Chatyr-Kul</h4>
+              <p>One of the world's highest lakes.</p>
+            </div>
+            <span class="hdr-card-btn">Discover<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+        </div>
+      </div>
+      <div class="hdr-item">
+        <button type="button" class="hdr-link" aria-expanded="false">Service</button>
+        <div class="hdr-drop">
+          <a class="hdr-card" href="#contact">
+            <img src="img/nav-plan.jpg" alt="Plan a Trip">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Plan a Trip</h4>
+              <p>Need assistance planning your Kyrgyzstan adventure?</p>
+            </div>
+            <span class="hdr-card-btn">Start Here<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="tours.html">
+            <img src="img/nav-help.jpg" alt="Help Center">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>Help Center</h4>
+              <p>Browse guides, watch videos, and learn everything about the Tian Shan.</p>
+            </div>
+            <span class="hdr-card-btn">Need Help<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+          <a class="hdr-card" href="#faq">
+            <img src="img/nav-faq.jpg" alt="FAQ">
+            <div class="hdr-card-overlay"></div>
+            <div class="hdr-card-body">
+              <h4>FAQ</h4>
+              <p>Got questions? We've got answers.</p>
+            </div>
+            <span class="hdr-card-btn">Learn more<span class="hdr-card-arrow"><svg width="15" height="10" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hdr-cta">
+      <a href="#contact" class="hdr-btn-amber group-btn"><span class="hdr-label">Plan a Trip<span class="hdr-arrow"><svg width="17" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></a>
+      <a href="https://wa.me/996500077564" target="_blank" rel="noopener" class="hdr-btn-soft group-btn"><span class="hdr-label">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2 1.38-.51.05-1.16.07-1.87-.12-.43-.11-.99-.32-1.7-.63-3-1.3-4.95-4.31-5.1-4.51-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.2 1.04-2.5.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.64-.14.26.1 1.66.78 1.95.92.29.15.48.22.55.34.07.13.07.72-.18 1.42z"/></svg>
+        Book via WhatsApp
+        <span class="hdr-arrow"><svg width="17" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </span></a>
+      <a href="https://wa.me/996500077564" target="_blank" rel="noopener" class="hdr-wa" aria-label="Book via WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2 1.38-.51.05-1.16.07-1.87-.12-.43-.11-.99-.32-1.7-.63-3-1.3-4.95-4.31-5.1-4.51-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.2 1.04-2.5.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.64-.14.26.1 1.66.78 1.95.92.29.15.48.22.55.34.07.13.07.72-.18 1.42z"/></svg></a>
+      <button type="button" class="hdr-burger" id="hdr-burger" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </nav>
+</header>
+<div class="hdr-dim" aria-hidden="true"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-slides" id="hero-slides">
+    <div class="hero-slide"><img src="img/hero-main.jpg" alt="Son-Kol yurt camp, Tian Shan" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="img/hero-bus.jpg" alt="Tour bus driving among the mountains"></div>
+    <div class="hero-slide"><img src="img/hero-slide3.jpg" alt="Kel-Suu lake, Kyrgyzstan"></div>
+  </div>
+  <div class="hero-overlay-bottom"></div>
+  <div class="hero-overlay-side"></div>
+  <div class="hero-overlay-flat"></div>
+
+  <div class="hero-content">
+        <h1 class="hero-title">
+      <div class="mask-line" data-delay="250"><div class="line-inner">Welcome to the</div></div>
+      <div class="mask-line" data-delay="400"><div class="line-inner">great outdoors.</div></div>
+    </h1>
+
+    <div class="hero-sub">
+      <div class="mask-line sm" data-delay="620"><div class="line-inner"><p>Book your trip today and get ready to hit the</p></div></div>
+      <div class="mask-line sm" data-delay="740"><div class="line-inner"><p>road with comfort, local guides and total freedom.</p></div></div>
+    </div>
+
+    <div class="hero-cta" id="hero-cta">
+      <a href="tours.html" class="btn-yellow">
+        <span>Discover Tours</span>
+        <span class="arrow-slide"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="#contact" class="btn-line">Reserve your Plus</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="hero-dots">
+      <button type="button" aria-label="Slide 1"></button>
+      <button type="button" aria-label="Slide 2"></button>
+      <button type="button" aria-label="Slide 3"></button>
+    </div>
+</section>
+
+<!-- ================= TOURS SHOWCASE ================= -->
+<section class="tours-showcase" id="destinations">
+  <div class="container">
+    <div class="ts-head">
+      <h2>Tours built for life on the road.<br>Comfort and freedom, without compromise.</h2>
+      <p>Four tours tailored to your style with the heart of a real adventure.</p>
+    </div>
+    <div class="ts-grid">
+      <a class="ts-card" href="tours.html">
+        <img src="img/kelsuu.jpg" alt="Jeep">
+        <div class="ts-card-overlay"></div>
+        <div class="ts-card-body">
+          <h3>Jeep Tours</h3>
+          <p>Kel-Suu, Chatyr-Kul and the border zones.</p>
+          <span class="ts-price">From $85 / day</span>
+          <span class="ts-btn">Explore<span class="arrow-slide"><svg width="16" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </div>
+      </a>
+      <a class="ts-card" href="tours.html">
+        <img src="img/nav-tour-horse.jpg" alt="Horse">
+        <div class="ts-card-overlay"></div>
+        <div class="ts-card-body">
+          <h3>Horse Treks</h3>
+          <p>Multi-day rides across alpine pastures.</p>
+          <span class="ts-price">From $65 / day</span>
+          <span class="ts-btn">Explore<span class="arrow-slide"><svg width="16" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </div>
+      </a>
+      <a class="ts-card" href="tours.html">
+        <img src="img/sonkol.jpg" alt="Hiking">
+        <div class="ts-card-overlay"></div>
+        <div class="ts-card-body">
+          <h3>Hiking</h3>
+          <p>Guided trails to passes and alpine lakes.</p>
+          <span class="ts-price">From $45 / day</span>
+          <span class="ts-btn">Explore<span class="arrow-slide"><svg width="16" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </div>
+      </a>
+      <a class="ts-card" href="tours.html">
+        <img src="img/hero-main.jpg" alt="Cultural">
+        <div class="ts-card-overlay"></div>
+        <div class="ts-card-body">
+          <h3>Cultural Tours</h3>
+          <p>Yurt stays, shepherds and eagle hunters.</p>
+          <span class="ts-price">From $50 / day</span>
+          <span class="ts-btn">Explore<span class="arrow-slide"><svg width="16" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        </div>
+      </a>
+    </div>
+    <p class="ts-choice"><a href="tours.html">Your trip, your choice. <svg width="16" height="12" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </div>
+</section>
+<!-- ================= FEATURES CAROUSEL (Made by you / for you) ================= -->
+<section class="feat" id="features">
+  <div class="feat-head">
+    <p class="feat-pill reveal d1">Made for you, by locals</p>
+    <p class="feat-title reveal d2">Local-led tours, crafted<br>around the Tian Shan.</p>
+    <p class="feat-sub reveal d3">Explore remote valleys in comfort with trips planned down to smart, intuitive details.</p>
+    <div class="feat-tabs reveal d4" id="feat-tabs">
+      <button type="button" class="feat-tab active" data-tab="guides">Guides</button>
+      <button type="button" class="feat-tab" data-tab="comfort">Comfort</button>
+      <button type="button" class="feat-tab" data-tab="custom">Custom</button>
+    </div>
+  </div>
+  <div class="feat-stage reveal d1" id="feat-stage">
+        <div class="feat-slide active" data-tab="guides">
+          <div class="feat-inner">
+            <div class="feat-mobile">
+              <div class="feat-copy">
+                <p class="feat-h">Local experts.<br>Real mountain knowledge.</p>
+                <p class="feat-t">Guides born and raised in the Tian Shan — every route, yurt and border permit handled by someone who calls these mountains home.</p>
+              </div>
+              <div class="feat-img"><video class="feat-video" src="img/tour-video.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+            </div>
+            <div class="feat-tablet">
+              <div class="feat-img"><video class="feat-video" src="img/tour-video.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Local experts.<br>Real mountain knowledge.</p></div>
+                <div class="feat-col"><p class="feat-t">Guides born and raised in the Tian Shan — every route, yurt and border permit handled by someone who calls these mountains home.</p></div>
+              </div>
+            </div>
+            <div class="feat-desktop">
+              <div class="feat-img"><video class="feat-video" src="img/tour-video.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Local experts.<br>Real mountain knowledge.</p></div>
+                <div class="feat-col"><p class="feat-t">Guides born and raised in the Tian Shan — every route, yurt and border permit handled by someone who calls these mountains home.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feat-slide" data-tab="comfort">
+          <div class="feat-inner">
+            <div class="feat-mobile">
+              <div class="feat-copy">
+                <p class="feat-h">Everything arranged.<br>Without you thinking about it.</p>
+                <p class="feat-t">Permits, transport, stays and gear handled in advance — so you focus on the mountains, not the logistics.</p>
+              </div>
+              <div class="feat-img"><img src="img/feat-comfort.webp" alt="Everything arranged. Without you thinking about it." loading="lazy"></div>
+            </div>
+            <div class="feat-tablet">
+              <div class="feat-img"><img src="img/feat-comfort.webp" alt="Everything arranged. Without you thinking about it." loading="lazy"></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Everything arranged.<br>Without you thinking about it.</p></div>
+                <div class="feat-col"><p class="feat-t">Permits, transport, stays and gear handled in advance — so you focus on the mountains, not the logistics.</p></div>
+              </div>
+            </div>
+            <div class="feat-desktop">
+              <div class="feat-img"><img src="img/feat-comfort.webp" alt="Everything arranged. Without you thinking about it." loading="lazy"></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Everything arranged.<br>Without you thinking about it.</p></div>
+                <div class="feat-col"><p class="feat-t">Permits, transport, stays and gear handled in advance — so you focus on the mountains, not the logistics.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feat-slide" data-tab="custom">
+          <div class="feat-inner">
+            <div class="feat-mobile">
+              <div class="feat-copy">
+                <p class="feat-h">Make it yours,<br>without overcomplicating it.</p>
+                <p class="feat-t">Choose the days, pace and style that fit you — jeep, horse or on foot — with nothing you don&rsquo;t need.</p>
+              </div>
+              <div class="feat-img"><img src="img/feat-custom.webp" alt="Make it yours, without overcomplicating it." loading="lazy"></div>
+            </div>
+            <div class="feat-tablet">
+              <div class="feat-img"><img src="img/feat-custom.webp" alt="Make it yours, without overcomplicating it." loading="lazy"></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Make it yours,<br>without overcomplicating it.</p></div>
+                <div class="feat-col"><p class="feat-t">Choose the days, pace and style that fit you — jeep, horse or on foot — with nothing you don&rsquo;t need.</p></div>
+              </div>
+            </div>
+            <div class="feat-desktop">
+              <div class="feat-img"><img src="img/feat-custom.webp" alt="Make it yours, without overcomplicating it." loading="lazy"></div>
+              <div class="feat-row">
+                <div class="feat-col"><p class="feat-h">Make it yours,<br>without overcomplicating it.</p></div>
+                <div class="feat-col"><p class="feat-t">Choose the days, pace and style that fit you — jeep, horse or on foot — with nothing you don&rsquo;t need.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+
+<!-- ================= MAP (Kyrgyzstan / Naryn) ================= -->
+<section class="map-sec">
+  <div class="map-inner">
+    <div class="map-search">
+      <input type="text" id="map-search" placeholder="Enter city or place" autocomplete="off">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+    </div>
+    <div id="map" class="map-canvas"></div>
+    <div class="map-filter" id="map-filter">
+      <button type="button" class="mf-btn active" data-cat="jeep"><span class="mf-dot"></span><span class="mf-label">Jeep Tours</span><span class="mf-status"><i></i></span></button>
+      <span class="mf-sep"></span>
+      <button type="button" class="mf-btn active" data-cat="horse"><span class="mf-dot"></span><span class="mf-label">Horse Treks</span><span class="mf-status"><i></i></span></button>
+      <span class="mf-sep"></span>
+      <button type="button" class="mf-btn active" data-cat="hike"><span class="mf-dot"></span><span class="mf-label">Hiking &amp; Culture</span><span class="mf-status"><i></i></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS (Find a tour, wherever you are) ================= -->
+<section class="stats-sec">
+  <div class="stats-card">
+    <div class="stats-head">
+      <p class="stats-title reveal d1">Find a tour,<br>wherever you are.</p>
+      <p class="stats-sub reveal d2">Use our local network to quickly locate trusted guides, yurt stays and drivers — so you can stay safe and keep moving.</p>
+    </div>
+    <div class="stats-list">
+      <div class="stats-item reveal d3">
+        <div class="stats-nums">
+          <p class="stats-num"><span class="tabular-nums" data-count="100">+0</span></p>
+          <p class="stats-label">Tours &amp; Experiences</p>
+        </div>
+        <span class="stats-dot dot-orange"></span>
+      </div>
+      <div class="stats-item reveal d4">
+        <div class="stats-nums">
+          <p class="stats-num"><span class="tabular-nums" data-count="2000">+0</span></p>
+          <p class="stats-label">Happy Travellers</p>
+        </div>
+        <span class="stats-dot dot-yellow"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS (Originkit coverflow + контент гугл-отзыва) ================= -->
+<section class="reviews">
+  <div class="reviews-panel">
+    <div class="reviews-cardwrap">
+      <div class="reviews-max">
+        <div class="reviews-head">
+          <h2 class="reviews-title reveal">What our travellers say</h2>
+          <p class="reviews-sub reveal">Real Google reviews from real guests &mdash; rated 5/5 for jeep expeditions, horse treks and yurt nights under the stars.</p>
+        </div>
+        <div class="cf reveal" id="cf-box" tabindex="0" aria-roledescription="carousel">
+          <div class="cf-arrows">
+            <button type="button" class="cf-nav cf-prev" aria-label="Предыдущий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <button type="button" class="cf-nav cf-next" aria-label="Следующий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="cf-stage" id="cf-stage">          <div class="cf-card" data-i="0" role="button" tabindex="0" aria-label="James Walker">
+            <div class="cf-body">
+              <div class="cf-top">
+                <div class="cf-stars"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+                <span class="cf-on">5/5 on</span>
+                <span class="cf-google">Google</span>
+              </div>
+              <p class="cf-quote">&ldquo;The Jeep expedition to Kel-Suu was the best day of our two weeks in Kyrgyzstan. Permits, driver, lunch by the lake — everything handled.&rdquo;</p>
+              <div class="cf-author">
+                <img class="cf-av" src="img/review-james.jpg" alt="James Walker" draggable="false">
+                <span class="cf-name">James Walker</span>
+              </div>
+            </div>
+            <div class="cf-dim"></div>
+          </div>
+          <div class="cf-card" data-i="1" role="button" tabindex="0" aria-label="Olivia Carter">
+            <div class="cf-body">
+              <div class="cf-top">
+                <div class="cf-stars"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+                <span class="cf-on">5/5 on</span>
+                <span class="cf-google">Google</span>
+              </div>
+              <p class="cf-quote">&ldquo;As a solo traveler I felt safe and looked after from the moment I landed. The yurt night at Son-Kol is something I'll never forget.&rdquo;</p>
+              <div class="cf-author">
+                <img class="cf-av" src="img/review-olivia.jpg" alt="Olivia Carter" draggable="false">
+                <span class="cf-name">Olivia Carter</span>
+              </div>
+            </div>
+            <div class="cf-dim"></div>
+          </div>
+          <div class="cf-card" data-i="2" role="button" tabindex="0" aria-label="Amelia Foster">
+            <div class="cf-body">
+              <div class="cf-top">
+                <div class="cf-stars"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+                <span class="cf-on">5/5 on</span>
+                <span class="cf-google">Google</span>
+              </div>
+              <p class="cf-quote">&ldquo;Horse treks, eagle hunters, bread over an open fire — CBT Naryn made Central Asia feel like home.&rdquo;</p>
+              <div class="cf-author">
+                <img class="cf-av" src="img/review-amelia.jpg" alt="Amelia Foster" draggable="false">
+                <span class="cf-name">Amelia Foster</span>
+              </div>
+            </div>
+            <div class="cf-dim"></div>
+          </div>
+          <div class="cf-card" data-i="3" role="button" tabindex="0" aria-label="Benjamin Harris">
+            <div class="cf-body">
+              <div class="cf-top">
+                <div class="cf-stars"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+                <span class="cf-on">5/5 on</span>
+                <span class="cf-google">Google</span>
+              </div>
+              <p class="cf-quote">&ldquo;Perfectly organised, endlessly patient guides. They rebuilt our itinerary on the fly when the weather turned — zero stress.&rdquo;</p>
+              <div class="cf-author">
+                <img class="cf-av" src="img/review-benjamin.jpg" alt="Benjamin Harris" draggable="false">
+                <span class="cf-name">Benjamin Harris</span>
+              </div>
+            </div>
+            <div class="cf-dim"></div>
+          </div>
+          <div class="cf-card" data-i="4" role="button" tabindex="0" aria-label="Lucas Martin">
+            <div class="cf-body">
+              <div class="cf-top">
+                <div class="cf-stars"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+                <span class="cf-on">5/5 on</span>
+                <span class="cf-google">Google</span>
+              </div>
+              <p class="cf-quote">&ldquo;Every dollar goes to a local family. Best travel decision we made this year.&rdquo;</p>
+              <div class="cf-author">
+                <img class="cf-av" src="img/review-lucas.jpg" alt="Lucas Martin" draggable="false">
+                <span class="cf-name">Lucas Martin</span>
+              </div>
+            </div>
+            <div class="cf-dim"></div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STORIES ================= -->
+<section class="stories" id="stories">
+  <div class="container stories-wrap">
+    <div class="stories-head reveal d1">
+      <p class="stories-title">Stories from the Road</p>
+      <p class="stories-sub reveal d2">For travel inspiration, honest tips and real stories from Kyrgyzstan — read on!</p>
+    </div>
+    <ul class="stories-cards reveal d3">
+      <li class="story-card">
+        <a class="story-card-link" href="stories.html">
+          <div class="story-card-media"><img src="img/story-beth.webp" alt="How to cross to China: the full 2026 permit guide" loading="lazy"></div>
+          <div class="story-card-dim"></div>
+          <div class="story-card-body">
+            <p class="story-card-tag">Guides</p>
+            <h3 class="story-card-title">How to cross to China: the full 2026 permit guide</h3>
+          </div>
+        </a>
+      </li>
+      <li class="story-card">
+        <a class="story-card-link" href="stories.html">
+          <div class="story-card-media"><img src="img/story-theresa.webp" alt="What to pack for a Son-Kol yurt night at 3,000 m" loading="lazy"></div>
+          <div class="story-card-dim"></div>
+          <div class="story-card-body">
+            <p class="story-card-tag">Tips</p>
+            <h3 class="story-card-title">What to pack for a Son-Kol yurt night at 3,000&nbsp;m</h3>
+          </div>
+        </a>
+      </li>
+      <li class="story-card">
+        <a class="story-card-link" href="stories.html">
+          <div class="story-card-media"><img src="img/story-neal.webp" alt="Son-Kol vs Kel-Suu — which lake should you do first?" loading="lazy"></div>
+          <div class="story-card-dim"></div>
+          <div class="story-card-body">
+            <p class="story-card-tag">Comparison</p>
+            <h3 class="story-card-title">Son-Kol vs Kel-Suu — which lake should you do first?</h3>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="stories-more reveal d4">
+      <a href="stories.html" class="btn-yellow"><span>Read more stories</span><span class="arrow-slide"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="faq-wrap">
+    <div class="faq-head reveal d2">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+    </div>
+    <ul class="faq-list reveal d3">
+      <li class="faq-item">
+        <button type="button" class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">Do I need a border permit for Kel-Suu?</span>
+          <span class="faq-ic"><span class="faq-ic-inner"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.8V16.2M1.8 9H16.2" stroke="#131211" stroke-width="1.8" stroke-linecap="round"/></svg></span></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Kel-Suu lies in the border zone with China. We arrange the permit for you — just send your passport details and we handle the paperwork before you arrive.</div></div>
+      </li>
+      <li class="faq-item">
+        <button type="button" class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">How high is Son-Kol, and will I feel the altitude?</span>
+          <span class="faq-ic"><span class="faq-ic-inner"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.8V16.2M1.8 9H16.2" stroke="#131211" stroke-width="1.8" stroke-linecap="round"/></svg></span></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Son-Kol sits at 3,016&nbsp;m. Most visitors feel it mildly on the first night. We plan a slow first day and always have a vehicle ready if you need to descend.</div></div>
+      </li>
+      <li class="faq-item">
+        <button type="button" class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">What is included in the price of a tour?</span>
+          <span class="faq-ic"><span class="faq-ic-inner"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.8V16.2M1.8 9H16.2" stroke="#131211" stroke-width="1.8" stroke-linecap="round"/></svg></span></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Transport with a local driver-guide, border permits, meals and yurt stays are included in every trip. Flights and travel insurance are not — just bring your sense of adventure.</div></div>
+      </li>
+      <li class="faq-item">
+        <button type="button" class="faq-q" aria-expanded="false">
+          <span class="faq-q-text">Can I book a tour as a solo traveller?</span>
+          <span class="faq-ic"><span class="faq-ic-inner"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.8V16.2M1.8 9H16.2" stroke="#131211" stroke-width="1.8" stroke-linecap="round"/></svg></span></span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. Most trips run in small groups of 2–8 people, and solo travellers are welcome on every departure — no single supplement for shared yurt stays.</div></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="contact">
+      <div class="ft-extra">
+      <div class="ft-left">
+
+
+        <p class="ft-subscribe">Subscribe to learn about our latest news, updates, and adventures.</p>
+        <form class="ft-form" id="ft-form" novalidate>
+          <div class="ft-field"><input type="text" name="firstname" autocomplete="on" placeholder="" required><label>Your First Name*</label></div>
+          <div class="ft-field"><input type="email" name="email" autocomplete="on" placeholder="" required><label>Your Email*</label></div>
+          <div class="ft-field ft-hp"><input type="text" name="username" autocomplete="off" placeholder=""><label>Username*</label></div>
+          <div class="ft-field"><input type="text" name="zip" autocomplete="on" placeholder="" required><label>Zip Code*</label></div>
+          <button type="submit" class="btn-dark"><span>Subscribe</span><span class="arrow-slide"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.667 5.72222L0.500324 5.72222M14.667 5.72222L8.59556 10.4444M14.667 5.72222L8.59556 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </form>
+
+
+      </div>
+      <div class="ft-right">
+        <div class="ft-rating">
+          <div class="ft-stars"><svg width="19" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="19" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="19" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="19" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg><svg width="19" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.86914 0L10.8604 6.12843H17.3042L12.091 9.916L14.0823 16.0444L8.86914 12.2569L3.65599 16.0444L5.64724 9.916L0.434087 6.12843H6.87789L8.86914 0Z" fill="#131211"></path></svg></div>
+          <div class="ft-rating-row"><p class="ft-rating-text">4.9/5 on</p><span class="ft-google">Google</span></div>
+        </div>
+        <div class="ft-quote">
+          <p class="ft-quote-text">&ldquo;I love your build because you made it for people like us who don&rsquo;t know what we&rsquo;re doing. It just works.&rdquo;</p>
+          <p class="ft-quote-name">Jane, Traveling nurse</p>
+          <p class="ft-quote-sub">Over 2700 miles traveled from Las Vegas</p>
+        </div>
+</div>
+
+    </div>
+<div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Tours</h4>
+        <a href="tours.html">Jeep Tours</a>
+        <a href="tours.html">Horse Treks</a>
+        <a href="tours.html">Hiking</a>
+        <a href="tours.html">Cultural Tours</a>
+        <a href="tours.html">Cultural Shows</a>
+      </div>
+      <div>
+        <h4>Destinations</h4>
+        <a href="#destinations">Kel-Suu</a>
+        <a href="#destinations">Son-Kol</a>
+        <a href="#destinations">Tash Rabat</a>
+        <a href="#destinations">Chatyr-Kul</a>
+        <a href="#destinations">Kol-Tor</a>
+        <a href="#destinations">Shar Waterfall</a>
+      </div>
+      <div>
+        <h4>Help Me Choose</h4>
+        <a href="#contact">Plan a Trip</a>
+        <a href="#faq">FAQ</a>
+        <a href="#destinations">Travel Tips</a>
+        <a href="#stories">Reviews</a>
+        <a href="#contact">About Us</a>
+      </div>
+      <div>
+        <h4>CBT Naryn</h4>
+        <a href="#faq">FAQ</a>
+        <a href="#destinations">Travel Tips</a>
+        <a href="https://www.silkroad-guesthouse.com" target="_blank" rel="noopener">Silk Road Guesthouse</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Our Mission</a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <p><a href="tel:+996559567685">+996 559 567 685</a> &nbsp;&#183;&nbsp; <a href="mailto:info@cbt-naryn.com">info@cbt-naryn.com</a></p>
+      <p>Naryn city, Lenina str. 8 — Kyrgyz Republic, Naryn region</p>
+      <div class="footer-meta">
+        <div class="socials">
+          <a href="https://www.facebook.com/CBTNaryn" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.5l.5-3h-3V9.1c0-.9.3-1.6 1.6-1.6H16.6V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.9 1.4-3.9 3.9V11H8v3h2.5v7h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cbtnaryn/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/996500077564" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2 1.38-.51.05-1.16.07-1.87-.12-.43-.11-.99-.32-1.7-.63-3-1.3-4.95-4.31-5.1-4.51-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.2 1.04-2.5.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.64-.14.26.1 1.66.78 1.95.92.29.15.48.22.55.34.07.13.07.72-.18 1.42z"/></svg>
+          </a>
+          <a href="https://t.me/scott_cbt" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5l-3.4 15.3c-.25 1.12-.9 1.4-1.83.87l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.15 9.4-8.5c.4-.36-.09-.56-.62-.2L5.7 12.6l-5.02-1.57c-1.1-.34-1.1-1.1.23-1.62L20.2 3.16c.92-.34 1.72.2 1.3 1.34z"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer-disclaimer">CBT Naryn provides the information on this website for general purposes only. We make no guarantees or warranties, express or implied, regarding the accuracy, reliability, or availability of the information, products, services, or related graphics on this site for any purpose.</p>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&#169; 2026 CBT Naryn. All Rights Reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('#feat-tabs .feat-tab');
+  var slides = document.querySelectorAll('.feat-slide');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      slides.forEach(function (s) {
+        s.classList.toggle('active', s.getAttribute('data-tab') === tab.getAttribute('data-tab'));
+      });
+    });
+  });
+})();
+</script>
+<script src="js/leaflet.js?v=20260913"></script>
+<script>
+(function () {
+  try {
+  var places = [
+    { name: 'Naryn (base)',         sub: 'Tour start — office & guesthouse', lat: 41.4287, lng: 76.0010, cat: 'base' },
+    { name: 'Son-Kol lake',         sub: 'Horse treks & yurt nights at 3,016 m', lat: 41.8689, lng: 75.1375, cat: 'horse' },
+    { name: 'Kel-Suu lake',         sub: 'Jeep expedition to the Chinese border', lat: 40.7022, lng: 76.3900, cat: 'jeep' },
+    { name: 'Chatyr-Kul lake',      sub: 'Jeep tour to the second highest lake', lat: 40.6194, lng: 75.3392, cat: 'jeep' },
+    { name: 'Tash-Rabat',           sub: 'Hiking to the 15th-century caravanserai', lat: 40.8221, lng: 75.2849, cat: 'hiking' },
+    { name: 'At-Bashy',             sub: 'Cultural village stay with local families', lat: 41.1677, lng: 75.8017, cat: 'hike' }
+  ];
+  var map = L.map('map', { scrollWheelZoom: false, attributionControl: false, zoomControl: false });
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+  var providers = [
+    ['https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }],
+    ['https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }]
+  ];
+  var layer = null, pi = 0;
+  function addTiles() {
+    if (layer) map.removeLayer(layer);
+    if (pi >= providers.length) return;
+    layer = L.tileLayer(providers[pi][0], Object.assign({ attribution: '' }, providers[pi][1]));
+    layer.on('tileerror', function () { pi++; addTiles(); });
+    layer.addTo(map);
+  }
+  addTiles();
+
+  var markers = [];
+  places.forEach(function (p) {
+    var icon = L.divIcon({
+      className: '',
+      html: '<div class="tm-pin' + (p.cat === 'base' ? ' base' : '') + '"><span></span></div>',
+      iconSize: [22, 22], iconAnchor: [11, 11], popupAnchor: [0, -12]
+    });
+    var m = L.marker([p.lat, p.lng], { icon: icon }).addTo(map);
+    m.bindPopup('<b>' + p.name + '</b>' + p.sub);
+    m._cat = p.cat; m._name = (p.name + ' ' + p.sub).toLowerCase();
+    markers.push(m);
+  });
+  map.fitBounds(L.latLngBounds(markers.map(function (m) { return m.getLatLng(); })), { padding: [40, 40] });
+
+  // search
+  var q = document.getElementById('map-search');
+  q.addEventListener('input', function () {
+    var v = q.value.trim().toLowerCase();
+    markers.forEach(function (m) {
+      m.setOpacity(!v || m._name.indexOf(v) !== -1 ? 1 : 0.15);
+    });
+  });
+  map.whenReady(function () { map.invalidateSize(); });
+  window.addEventListener('load', function () { setTimeout(function () { map.invalidateSize(); }, 50); });
+  var fbtns = document.querySelectorAll('.map-filter .mf-btn');
+  fbtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.classList.toggle('active');
+      var cat = b.getAttribute('data-cat');
+      markers.forEach(function (m) {
+        if (m._cat === 'base') return;
+        if (m._cat === cat) m.setOpacity(b.classList.contains('active') ? 1 : 0.15);
+      });
+    });
+  });
+  } catch (e) { console.error('map error', e); }
+})();
+</script>
+<script>
+(function () {
+  var nums = document.querySelectorAll('.stats-num .tabular-nums');
+  function isCount(el) { return el.getAttribute('data-count'); }
+  nums.forEach(function (el) {
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          var start = null, dur = 1400;
+          function tick(now) {
+            if (!start) start = now;
+            var p = Math.min((now - start) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = '+' + Math.round(target * eased).toLocaleString('en-US');
+            if (p < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = '+0';
+        }
+      });
+    }, { threshold: 0.4 });
+    io.observe(el);
+  });
+})();
+</script>
+<script>
+(function () {
+  var btn = document.getElementById('rev-more');
+  if (!btn) return;
+  var list = document.querySelector('.rev-list');
+  var cards = list.querySelectorAll('.rev-card');
+  function apply() {
+    cards.forEach(function (c, i) {
+      c.style.display = (i < 6 || list.classList.contains('rev-expanded')) ? '' : 'none';
+    });
+    btn.querySelector('span').textContent = list.classList.contains('rev-expanded') ? 'Show less' : 'Discover more testimonials';
+  }
+  btn.addEventListener('click', function () {
+    list.classList.toggle('rev-expanded');
+    apply();
+  });
+  apply();
+})();
+</script>
+<script>
+(function () {
+  var box = document.getElementById('cf-box');
+  var stage = document.getElementById('cf-stage');
+  if (!stage) return;
+  var cards = Array.prototype.slice.call(stage.children);
+  var n = cards.length;
+  var active = 0, locked = false;
+  var SCALE_STEP = 0.16, MAX_VISIBLE = 2, DEPTH = 240;
+  var tilt = 12, sideTilt = 8, gap = 8, dim = 1 - 0.60;
+  var dur = 0.6, ease = 'cubic-bezier(0.22, 1, 0.36, 1)';
+  var W = 400, H = 400;
+  function size() { W = Math.min(400, Math.max(260, window.innerWidth * 0.78)); H = W; }
+  function lock() { locked = true; setTimeout(function () { locked = false; }, Math.max(50, dur * 1000)); }
+  function layout() {
+    cards.forEach(function (c, i) {
+      var rel = i - active;
+      if (rel > n / 2) rel -= n;
+      if (rel < -n / 2) rel += n;
+      var ax = Math.abs(rel);
+      var visible = ax <= MAX_VISIBLE;
+      var sc = Math.max(0.4, 1 - ax * SCALE_STEP);
+      var tx = rel * (gap * 30) * (W / 400);
+      var tz = -ax * DEPTH;
+      var ry = -rel * tilt;
+      var rz = rel * sideTilt;
+      c.style.width = W + 'px';
+      c.style.height = H + 'px';
+      c.style.borderRadius = (3 / 20) * (Math.min(W, H) / 2) + 'px';
+      c.style.transform = 'translate(-50%, -50%) translateX(' + tx + 'px) translateZ(' + tz + 'px) rotateY(' + ry + 'deg) rotateZ(' + rz + 'deg) scale(' + sc + ')';
+      c.style.opacity = visible ? 1 : 0;
+      c.style.pointerEvents = visible ? 'auto' : 'none';
+      c.style.cursor = rel === 0 ? 'default' : 'pointer';
+      c.querySelector('.cf-dim').style.opacity = rel === 0 ? 0 : dim;
+    });
+  }
+  function go(i) { if (locked) return; lock(); active = ((i % n) + n) % n; layout(); }
+  cards.forEach(function (c, i) {
+    c.addEventListener('click', function () { go(i === active ? i + 1 : i); });
+    c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(i === active ? i + 1 : i); } });
+  });
+  box.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(active + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(active - 1); }
+  });
+  window.addEventListener('resize', function () { size(); layout(); });
+  var prevBtn = document.querySelector('.cf-prev');
+  var nextBtn = document.querySelector('.cf-next');
+  if (prevBtn) prevBtn.addEventListener('click', function () { go(active - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { go(active + 1); });
+  size(); layout();
+})();
+</script>
+<script>
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (it) {
+    var q = it.querySelector('.faq-q');
+    q.addEventListener('click', function () {
+      var wasOpen = it.classList.contains('open');
+      items.forEach(function (o) {
+        o.classList.remove('open');
+        var a = o.querySelector('.faq-a'); if (a) a.style.maxHeight = '0px';
+        var b = o.querySelector('.faq-q'); if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      if (!wasOpen) {
+        it.classList.add('open');
+        var a = it.querySelector('.faq-a');
+        if (a) { a.style.maxHeight = a.scrollHeight + 'px'; q.setAttribute('aria-expanded', 'true'); }
+      }
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  var f = document.getElementById('ft-form');
+  if (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var b = f.querySelector('button');
+      b.textContent = 'Subscribed ✓';
+      b.style.pointerEvents = 'none';
+    });
+  }
+})();
+</script>
+<script src="js/main.js?v=20260909"></script>
+</body>
+</html>
